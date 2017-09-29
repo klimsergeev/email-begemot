@@ -54,7 +54,7 @@ $global-breakpoint: $global-width + $global-gutter;
 // -------
 
 $grid-column-count: 12;
-$column-padding-bottom: $global-padding;
+$column-padding-bottom: $global-padding / 2;
 $container-radius: 0;
 
 // 3. Block Grid
@@ -76,16 +76,16 @@ $global-line-height: 1.4;
 $global-font-size: 15px;
 $body-line-height: $global-line-height;
 $header-font-family: 'Noto Sans', $body-font-family;
-$header-font-weight: $global-font-weight;
-$h1-font-size: 32px;
-$h2-font-size: 28px;
-$h3-font-size: 24px;
-$h4-font-size: 22px;
-$h5-font-size: 20px;
-$h6-font-size: 18px;
-$header-margin-bottom: 8px;
-$paragraph-margin-bottom: 8px;
-$small-font-size: 80%;
+$header-font-weight: normal;
+$h1-font-size: 30px;
+$h2-font-size: 26px;
+$h3-font-size: 22px;
+$h4-font-size: 20px;
+$h5-font-size: 18px;
+$h6-font-size: 16px;
+$header-margin-bottom: 6px;
+$paragraph-margin-bottom: 6px;
+$small-font-size: 64%;
 $small-font-color: $dark-gray;
 $lead-font-size: $global-font-size * 1.25;
 $lead-line-height: 1.6;
@@ -109,10 +109,10 @@ $stat-font-size: 40px;
 // ---------
 
 $button-padding: (
-  tiny: 4px 10px 4px 10px,
-  small: 6px 14px 6px 14px,
-  default: 8px 18px 10px 18px,
-  large: 12px 26px 12px 26px,
+  tiny: 8px 10px 8px 10px,
+  small: 10px 14px 10px 14px,
+  default: 12px 18px 14px 18px,
+  large: 16px 26px 16px 26px,
 );
 $button-font-size: (
   tiny: 12px,
@@ -124,7 +124,8 @@ $button-font-size: (
 $button-color: $white;
 $button-color-alt: $black;
 $button-font-weight: normal;
-$button-margin: 0 0 $global-margin 0;
+// $button-margin: 0 0 $global-margin 0;
+$button-margin: 0 0 0 0;
 $button-background: $primary-color;
 $button-border: 2px solid $button-background;
 $button-radius: $global-radius;

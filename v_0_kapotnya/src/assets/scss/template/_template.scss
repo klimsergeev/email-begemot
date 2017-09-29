@@ -1,14 +1,23 @@
 
+// @media
+
+@media only screen and (max-width: $global-breakpoint) {
+
+  div[class=coupon] {
+
+    font-size: 22px;
+    padding: 16px 18px 15px 18px;
+
+  }
+
+}
+
 // Settings & overrides
 
 hr {
   border: 1px solid $light-gray;
   margin: 18px 0 12px 0;
   Margin: 18px 0 12px 0;
-}
-
-hr.strong {
-  border: 2px solid $light-gray;
 }
 
 a {
@@ -44,4 +53,19 @@ table .footer {
 
 .legal {
   color: $dark-gray;
+}
+
+// Elements
+
+.coupon {
+  -webkit-font-smoothing: antialiased;
+  background: #ffcc11;
+  font-family: Courier, monospace;
+  padding: 8px 18px 7px 18px;
+  border: 1px dashed #fff;
+  text-align: center;
+  font-size: 28px;
+  text-transform: uppercase;
+  user-select: all;
+  letter-spacing: 4px;
 }

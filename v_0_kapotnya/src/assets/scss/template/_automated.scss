@@ -1,3 +1,5 @@
+// @media
+
 // Preheader
 
 table .autopreheader {
@@ -12,5 +14,26 @@ table .autoheader {
 
 .bonus {
 	color: $white;
+	font-weight: bold;
+}
+
+// Elements
+
+.item-color,
+.item-brand,
+.item-quantity {
+	font-size: 12px;
+}
+
+.item-brand,
+.item-quantity {
+	color: #999999;
+}
+
+.item-color {
+	text-transform: uppercase;
+}
+
+.item-price {
 	font-weight: bold;
 }
