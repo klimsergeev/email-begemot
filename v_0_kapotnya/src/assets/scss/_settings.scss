@@ -29,18 +29,18 @@ a {
 
 $primary-color: #11aa99;
 $secondary-color: #eeeeee;
-$success-color: #3adb76;
-$warning-color: #ffae00;
-$alert-color: #ec5840;
+$success-color: #88cc33;
+$warning-color: #ffcc11;
+$alert-color: #ee5522;
 $super-light-gray: #f4f4f4;
 $light-gray: #eeeeee;
 $medium-gray: #cccccc;
 $dark-gray: #999999;
-$black: #222222;
+$black: #333333;
 $white: #ffffff;
 $pre-color: #ff6908;
 $global-width: 560px;
-$global-width-small: 96%;
+$global-width-small: 100%;
 $global-gutter: 16px;
 $body-background: url('../assets/img/pattern_white.png') 0 0 repeat $super-light-gray;
 $container-background: $white;
@@ -83,8 +83,8 @@ $h3-font-size: 22px;
 $h4-font-size: 20px;
 $h5-font-size: 18px;
 $h6-font-size: 16px;
-$header-margin-bottom: 6px;
-$paragraph-margin-bottom: 6px;
+$header-margin-bottom: 8px;
+$paragraph-margin-bottom: 8px;
 $small-font-size: 64%;
 $small-font-color: $dark-gray;
 $lead-font-size: $global-font-size * 1.25;
@@ -111,19 +111,19 @@ $stat-font-size: 40px;
 $button-padding: (
   tiny: 8px 10px 8px 10px,
   small: 10px 14px 10px 14px,
-  default: 12px 18px 14px 18px,
+  default: 10px 32px 12px 32px,
   large: 16px 26px 16px 26px,
 );
 $button-font-size: (
   tiny: 12px,
   small: 14px,
-  default: 16px,
+  default: 14px,
   large: 22px,
 );
 
 $button-color: $white;
 $button-color-alt: $black;
-$button-font-weight: normal;
+$button-font-weight: bold;
 // $button-margin: 0 0 $global-margin 0;
 $button-margin: 0 0 0 0;
 $button-background: $primary-color;

@@ -1,21 +1,47 @@
 // @media
 
+@media only screen and (max-width: 576px) {
+
+	table .autopreheader {
+		background-color: $primary-color !important;
+	}
+
+	table .autoheader {
+		border-radius: 0 0 0 0 !important;
+		background-color: $white !important;
+		border-bottom: 4px solid $primary-color;
+	}
+
+}
+
 // Preheader
 
 table .autopreheader {
-	background: none;
+	background-color: transparent;
 }
 
 // Header
 
 table .autoheader {
-	background: $primary-color;
+	background-color: $primary-color;
+	border-radius: 16px 16px 0 0;
 }
 
-.bonus {
+.bonus-label,
+.bonus-count {
 	color: $white;
 	font-weight: bold;
 }
+
+.bonus-label {
+	font-size: 12px;
+}
+
+.bonus-count {
+	font-size: 17px;
+}
+
+// Footer
 
 // Elements
 
@@ -36,4 +62,5 @@ table .autoheader {
 
 .item-price {
 	font-weight: bold;
+	font-size: 18px;
 }

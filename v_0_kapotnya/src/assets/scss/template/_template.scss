@@ -1,13 +1,32 @@
 
 // @media
 
-@media only screen and (max-width: $global-breakpoint) {
+@media only screen and (max-width: 576px) {
 
-  div[class=coupon] {
+  div.coupon {
 
     font-size: 22px;
     padding: 16px 18px 15px 18px;
 
+  }
+
+  img.logo {
+    max-width: 208px !important;
+    margin: 0 auto;
+  }
+
+  img.social {
+    max-width: 48px !important;
+    margin: 0 auto;
+  }
+
+  p.text-justify {
+    text-align: left !important;
+  }
+
+  table .content {
+    border-bottom: 4px solid $primary-color !important;
+    min-height: calc(50vmax);
   }
 
 }
@@ -28,22 +47,40 @@ table.vertical-collapse td.columns,
 table.vertical-collapse td.column,
 table.vertical-collapse th.columns,
 table.vertical-collapse th.column {
+  padding-top: 0 !important;
   padding-bottom: 0 !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
 }
 
 table.button.secondary table a {
   color: $black;
 }
 
+p.text-justify {
+  text-align: justify;
+}
+
 // Preheader
 
+p.weblink a {
+  font-size: 13px;
+  color: #555;
+  border-bottom: 1px solid rgba(85,85,85,.32);
+}
+
 // Header
+
+// Content body
+
+table .content {
+  border-bottom: 4px solid #ffcc11;
+}
 
 // Footer
 
 table .footer {
   background: none;
-  max-width: 512px;
 }
 
 .disclaimer,
@@ -54,6 +91,30 @@ table .footer {
 .legal {
   color: $dark-gray;
 }
+
+.legal a {
+  color: #555;
+  border-bottom: 1px solid rgba(85,85,85,.32);
+}
+
+.phone-no a,
+.phone-no,
+.phone-sub {
+  font-family: $header-font-family;
+  font-weight: bold;
+  line-height: 16px;
+  border-bottom: none;
+}
+
+.phone-no a,
+.phone-no {
+  font-size: 24px;
+}
+
+.phone-sub {
+  font-size: 12px;
+}
+
 
 // Elements
 

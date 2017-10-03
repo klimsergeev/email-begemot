@@ -1,16 +1,28 @@
+
+
 <container class="autoheader">
 
-	<spacer size="6"></spacer>
-
 	<row class="vertical-collapse">
-		<columns valign="middle" small="12" large="4">
-			<p class="small-text-center">Бегемот</p>
+		<columns class="show-for-large" large="3"></columns>
+		<columns large="6">
+			<img src="{{root}}assets/img/assets__header__illustration_bottom.png">
 		</columns>
-		<columns valign="middle" class="show-for-large" large="4"></columns>
-		<columns valign="middle" class="show-for-large" large="4">
-		<p class="text-right bonus">Ваш бонусный счёт:<br>{{bonus}}</p>
+		<columns class="show-for-large" large="3"></columns>
+	</row>
 
+	<row class="">
+
+		<columns valign="middle" small="12" large="4">
+			<img class="logo" src="{{root}}assets/img/assets__logo@large.png">
 		</columns>
+
+		<columns valign="middle" class="show-for-large" large="4"></columns>
+		
+		<columns valign="middle" class="show-for-large" large="4">
+			<p class="text-right">
+			<span class="bonus-label">Ваш бонусный счёт</span><br><span class="bonus-count">{{bonus}}</span></p>
+		</columns>
+
 	</row>
 
 </container>
