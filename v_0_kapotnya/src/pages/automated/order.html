@@ -19,7 +19,7 @@ footer-extra: Данное письмо не является офертой. Ц
 			<spacer size="16"></spacer>
 
 			<h1>Спасибо за заказ!</h1>
-			<h2><small>Номер заказа # 123-70091</small></h2>
+			<h2><small>Номер заказа ##ORDER_ID#</small></h2>
 
 			<!-- item -->
 
@@ -73,6 +73,12 @@ footer-extra: Данное письмо не является офертой. Ц
 
 			<!-- /item -->
 
+			<!-- item  -->
+
+			{{>_cart-item}}
+
+			<!-- /item -->
+
 			<hr>
 
 		</columns>
@@ -81,13 +87,13 @@ footer-extra: Данное письмо не является офертой. Ц
 
 	<row>
 		<columns>
-			<p class="text-right">Стоимость товаров: <strong>10 648</strong> руб.</p>
-			<p class="text-right">Доставка: <strong>399</strong> руб.</p>
-			<p class="item-price text-right"><strong>Итого: 11 647 руб.</strong></p>
+			<p class="text-right">Стоимость товаров: <strong>#ORDER_PRICE#</strong> руб.</p>
+			<p class="text-right">Доставка: <strong>#DELIVERY_PRICE#</strong> руб.</p>
+			<p class="item-price text-right"><strong>Итого: #ORDER_TOTAL_PRICE# руб.</strong></p>
 
 			<spacer size="8"></spacer>
 
-			<center><button class="text-right rounded small-expanded" href="#">подробнее о заказе ›</button></center>
+			<center><button class="text-right rounded small-expanded" href="#ORDER_LINK#">подробнее о заказе ›</button></center>
 
 			<spacer size="16"></spacer>		
 		</columns>
