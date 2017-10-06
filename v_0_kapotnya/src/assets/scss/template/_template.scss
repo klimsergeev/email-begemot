@@ -43,6 +43,11 @@ a {
   border-bottom: 1px solid $primary-color;
 }
 
+a.tooltip {
+  color: #777;
+  border-bottom: 1px dotted rgba(119, 119, 119, .32);
+}
+
 table.vertical-collapse td.columns,
 table.vertical-collapse td.column,
 table.vertical-collapse th.columns,

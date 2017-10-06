@@ -1,0 +1,61 @@
+---
+layout: default
+subject: Оплата заказа 123-70091
+bonus: variable
+footer-reason: variable
+footer-extra: variable
+---
+
+{{>_autopreheader}}
+
+{{>_autoheader}}
+
+<container class="content">
+
+	<row>
+
+		<columns>
+
+			<spacer size="16"></spacer>
+
+			<h3>Спасибо за оплату заказа ##ORDER_ID#!</h3>
+
+			<spacer size="16"></spacer>
+
+			<p class="text-justify">На ваш бонусный счет будет начислено #ORDER_BONUS#, они будут действовать до #ORDER_BONUS_EXPIRE#.</p>
+
+			<p class="text-justify">Мы хотим подарить вам четыре купона, каждый из которых даёт право на одну бесплатную доставку наших товаров в пределах МКАД:</p>
+
+			<spacer size="16"></spacer>
+			<div class="coupon">#PROMO_001#</div>
+			<spacer size="16"></spacer>
+			<div class="coupon">#PROMO_002#</div>
+			<spacer size="16"></spacer>
+			<div class="coupon">#PROMO_003#</div>
+			<spacer size="16"></spacer>
+			<div class="coupon">#PROMO_004#</div>
+
+			<hr>
+
+			<p class="text-justify">Остались комментарии или появились пожелания к сервису или товарам?</p>
+
+		</columns>
+
+	</row>
+
+	<row>
+		<columns>
+
+			<spacer size="4"></spacer>
+
+			<center><button class="rounded small-expanded" href="#REVIEW_LINK#">напишите отзыв о заказе</button></center>
+
+			<spacer size="16"></spacer>
+
+		</columns>
+	</row>
+
+</container>
+
+{{>_autofooter}}
+
