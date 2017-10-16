@@ -1,0 +1,50 @@
+---
+layout: default
+subject: Вы сделали заказ на сайте «Бегемота»
+bonus: 1 234 балла
+footer-reason: оформили заказ
+footer-extra: Письмо было создано автоматически.
+---
+
+{{>_triggerpreheader}}
+
+{{>_triggerheader}}
+
+
+<container class="content">
+
+	<row>
+
+		<columns>
+
+			<spacer size="16"></spacer>
+
+			<h2>Ваша корзина стала дешевле</h2>
+			<p>На эти товары теперь действуют скидки. Какой-то текст какой-то текст какой-то текст какой-то текст какой-то текст какой-то текст.</p>
+
+			{{#repeat 3}}
+
+			{{>_cart-item-discounted}}
+
+			{{/repeat}}
+
+			<hr>
+
+		</columns>
+
+	</row>
+
+	<row>
+		<columns>
+
+			<center><button class="alert radius small-expanded" href="#ORDER_LINK#">перейти в корзину</button></center>
+
+			<spacer size="16"></spacer>
+
+		</columns>
+	</row>
+
+</container>
+
+{{>_triggerfooter}}
+

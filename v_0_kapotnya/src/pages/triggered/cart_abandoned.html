@@ -6,9 +6,10 @@ footer-reason: оформили заказ
 footer-extra: Данное письмо не является офертой. Цены действительны на момент рассылки. Актуальную информацию об условиях акций и обо всех текущих спецпредложениях вы можете узнать на сайте или у наших операторов.
 ---
 
-{{>_autopreheader}}
+{{>_triggerpreheader}}
 
-{{>_autoheader}}
+{{>_triggerheader}}
+
 
 <container class="content">
 
@@ -18,26 +19,14 @@ footer-extra: Данное письмо не является офертой. Ц
 
 			<spacer size="16"></spacer>
 
-			<h1>Спасибо за заказ!</h1>
-			<h2><small>Номер заказа ##ORDER_ID#</small></h2>
+			<h1>В вашей корзине остались товары</h1>
+			<p>Вы сделали отличный выбор. Не теряйте время и оформляйте заказ прямо сейчас!</p>
 
-			<!-- item -->
-
-			{{>_cart-item}}
-
-			<!-- /item -->
-
-			<!-- item -->
+			{{#repeat 3}}
 
 			{{>_cart-item}}
 
-			<!-- /item -->
-
-			<!-- item  -->
-
-			{{>_cart-item}}
-
-			<!-- /item -->
+			{{/repeat}}
 
 			<hr>
 
@@ -45,9 +34,15 @@ footer-extra: Данное письмо не является офертой. Ц
 
 	</row>
 
-	{{>_cart-total}}
+	{{>_cart-total-abandoned}}
+
+	{{>_recommend}}
+
+	{{>_recent}}
+
+	{{>_recent-discounted}}
 
 </container>
 
-{{>_autofooter}}
+{{>_triggerfooter}}
 

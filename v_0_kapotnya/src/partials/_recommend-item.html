@@ -1,0 +1,34 @@
+<spacer size="8"></spacer>
+
+<row>
+
+	{{#repeat 3}}
+
+
+	<columns large="4">
+
+		<div class="item-container">
+
+			<!-- <row><columns><p><img src="#IMAGE#"></p></columns></row> -->
+
+			<row><columns><p><img src="{{root}}assets/img/assets__items_bicycle.jpg"></p></columns></row>
+
+			<!-- <row><columns><p><a href="#DETAIL_LINK_URL#">#NAME#</a></p></columns></row> -->
+
+			<row><columns><p class="text-center"><a href="#DETAIL_LINK_URL#">Беговел Yanaha трёхколесный "Минн...</a></p></columns></row>
+
+			<!-- <row><columns><p class="item-price text-center">#TOTAL_PRICE# руб.</p></columns></row> -->
+
+			<row class="vertical-collapse"><columns><p class="item-price text-center">3 499 руб.</p></columns></row>
+
+			{{>_item-small-price}}
+
+			<row><columns><button class="radius alert expanded" href="#DETAIL_LINK_URL#">купить</button></columns></row>
+
+		</div>
+
+	</columns>
+
+
+	{{/repeat}}
+</row>

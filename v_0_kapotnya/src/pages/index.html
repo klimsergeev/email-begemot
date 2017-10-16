@@ -1,6 +1,8 @@
 ---
 layout: default
 subject: Begemot email templates
+footer-reason: оформили заказ
+footer-extra: Письмо создано автоматически
 ---
 
 <spacer size="16"></spacer>
@@ -10,23 +12,28 @@ subject: Begemot email templates
   <spacer size="24"></spacer>
   
   <row>
-    <columns small="12">
+    <columns>
 
     <h1>Begemot.ru email templates</h1>
 
-    <h1><small>Marketing emails</small></h1>
+    <h3>Маркетинг</h3>
 
-    <p>Nothing interesting here yet.</p>
+    <p>-- Нет писем --</p>
 
-    <h1><small>Automated emails</small></h1>
+    <h3>Триггеры</h3>
 
-    <p><a href="{{root}}automated/welcome.html">Welcome! Awesome!</a></p>
-    <p><a href="{{root}}automated/login_link.html">It's street fucking MAGIC!</a></p>
-    <p><a href="{{root}}automated/order.html">It's not "just a request", it's an order!</a></p>
-    <p><a href="{{root}}automated/order_payment.html">Hey, hommie, you still owe me some chips!</a></p>
-    <p><a href="{{root}}automated/order_calcelled.html">Come on! Have you just hit the wrong button again?</a></p>
-    <p><a href="{{root}}automated/pass_reset.html">I'd use more than two characters as a password. Whatever you say, though...</a></p>
-    <p><a href="{{root}}automated/pass_set.html">New password is all set! Try not to utter when you type it.</a></p>
+    <p><a href="{{root}}triggered/cart_abandoned.html">Брошенная корзина</a></p>
+    <p><a href="{{root}}triggered/cart_discounted.html">Ваша корзина стала дешевле</a></p>
+
+    <h3>Транзакции</h3>
+
+    <p><a href="{{root}}automated/welcome.html">Добро пожаловать на сайт</a></p>
+    <p><a href="{{root}}automated/login_link.html">Ссылка для логина</a></p>
+    <p><a href="{{root}}automated/order_new.html">Спасибо за заказ!</a></p>
+    <p><a href="{{root}}automated/order_payment.html">Оплата заказа</a></p>
+    <p><a href="{{root}}automated/order_calcelled.html">Отмена заказа</a></p>
+    <p><a href="{{root}}automated/pass_reset.html">Ссылка для смены пароля</a></p>
+    <p><a href="{{root}}automated/pass_set.html">Ваш пароль на сайте изменен</a></p>
 
     </columns>
   </row>

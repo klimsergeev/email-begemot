@@ -30,24 +30,7 @@ footer-extra: variable
 
 	</row>
 
-	<row>
-		<columns>
-
-			<p class="text-center">Стоимость товаров: <strong>#ORDER_PRICE#</strong> руб.</p>
-			<p class="text-center">Доставка: <strong>#DELIVERY_PRICE#</strong> руб.</p>
-			<p class="item-price text-center"><strong>Итого: #ORDER_TOTAL_PRICE# руб.</strong></p>
-
-			<spacer size="16"></spacer>
-
-			<center><button class="rounded small-expanded" href="#PAYMENT_LINK#">оплатить онлайн</button></center>
-
-			<spacer size="16"></spacer>
-
-			<center><button class="secondary rounded small-expanded" href="#ORDER_LINK#">редактировать заказ</button></center>
-
-			<spacer size="16"></spacer>		
-		</columns>
-	</row>
+	{{>_cart-total-pay-online}}
 
 </container>
 
