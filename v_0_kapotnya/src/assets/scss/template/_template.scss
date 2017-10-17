@@ -3,35 +3,99 @@
 
 @media only screen and (max-width: 576px) {
 
-  div.coupon {
+  // Coupon
 
+  div.coupon {
     font-size: 22px;
     padding: 16px 18px 15px 18px;
-
   }
+
+  // Header logo
 
   img.logo {
     max-width: 208px !important;
     margin: 0 auto;
   }
 
+  // Footer social
+
   img.social {
     max-width: 48px !important;
     margin: 0 auto;
   }
 
+  // Paragraph
+
   p.text-justify {
     text-align: left !important;
   }
+
+  // Body
 
   table .content {
     border-bottom: 4px solid $primary-color !important;
     min-height: calc(50vmax);
   }
 
+  table .triggercontent {
+    border-bottom: 4px solid $warning-color !important;
+    min-height: calc(50vmax);
+  }
+
+  // Headers & preheaders
+  
+  table .autopreheader {
+    background-color: $primary-color !important;
+  }
+
+  table .autoheader {
+    border-radius: 0 0 0 0 !important;
+    background-color: $white !important;
+    border-bottom: 4px solid $primary-color;
+  }
+
+  table .triggerpreheader {
+    background-color: $warning-color !important;
+  }
+
+  table .triggerheader {
+    border-radius: 0 0 0 0 !important;
+    background-color: $white !important;
+  }
+
+  // Menu
+
+  .triggermenu th {
+    border-bottom: 1px solid $white;
+  }
+
+  .triggermenu th.triggermenu-item {
+    background: $white !important;
+  }
+
+  .triggermenu-item p a {
+    font-size: 14px !important;
+    border-radius: 0;
+  }
+
+  .triggermenu th.first th {
+    border-radius: 12px 12px 0 0;
+  }
+
+  .triggermenu th.last th {
+    border-radius: 0 0 12px 12px;
+    border-bottom: none;
+  }
+
 }
 
 // Settings & overrides
+
+// .columns th,
+// .columns td {
+//   outline: 1px solid red;
+// }
+
 
 hr {
   border: 1px solid $light-gray;
@@ -76,10 +140,24 @@ p.weblink a {
 
 // Header
 
-// Content body
+.bonus-label,
+.bonus-count {
+  color: $white;
+  font-weight: bold;
+}
+
+.bonus-label {
+  font-size: 12px;
+}
+
+.bonus-count {
+  font-size: 17px;
+}
+
+// Body
 
 table .content {
-  border-bottom: 4px solid #ffcc11;
+  border-bottom: 4px solid $warning-color;
 }
 
 // Footer
@@ -122,6 +200,63 @@ table .footer {
 
 
 // Elements
+
+.item-color,
+.item-brand,
+.item-quantity {
+  font-size: 12px;
+}
+
+.item-brand,
+.item-quantity {
+  color: $dark-gray;
+}
+
+.item-color {
+  text-transform: uppercase;
+}
+
+.item-price {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.item-container {
+  padding: 16px 16px 8px 16px;
+  border: 2px solid #eee;
+  border-radius: 4px;
+  margin: 0 8px 0 8px;
+}
+
+img.image-border {
+  border: 2px solid #eee;
+  border-radius: 4px;
+}
+
+.item-small-price-container {
+  padding: 6px 4px 0 4px;
+  border: 1px solid #eee;
+  background-color: #f4f4f4;
+  border-radius: $global-radius / 2;
+}
+
+.item-price-old { 
+  font-size: 14px;
+  text-decoration: line-through;
+  color: #999999;
+}
+
+.item-price-new {
+  font-weight: bold;
+  font-size: 16px;
+  color: #ee1166;
+}
+
+.item-small-price {
+  font-weight: bold;
+  font-size: 16px;
+  color: #999999;
+}
 
 
 .coupon {

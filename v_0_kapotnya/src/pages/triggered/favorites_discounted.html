@@ -10,34 +10,38 @@ footer-extra: Данное письмо не является офертой. Ц
 
 {{>_triggerheader}}
 
-
-
 <container class="triggercontent">
 	
 {{>_triggermenu}}
 
-	<row>
+<row>
 
+	<columns>
+
+		<spacer size="16"></spacer>
+		
+		<h3>Товары, которые вы добавили в избранное стали дешевле!</h3>
+		<p>Не теряйте время и оформляйте заказ прямо сейчас!</p>
+
+		{{#repeat 1}}
+
+		{{>_recent-item-discounted}}
+
+		{{/repeat}}
+
+	</columns>
+
+</row>
+
+<row>
 		<columns>
+
+			<center><button class="secondary radius small-expanded" href="http://begemot.ru/profile/?page=favorite">посмотреть все избранные товары</button></center>
 
 			<spacer size="16"></spacer>
 
-			<h1>В вашей корзине остались товары</h1>
-			<p>Вы сделали отличный выбор. Не теряйте время и оформляйте заказ прямо сейчас!</p>
-
-			{{#repeat 3}}
-
-			{{>_cart-item-abandoned}}
-
-			{{/repeat}}
-
-			<hr>
-
 		</columns>
-
 	</row>
-
-	{{>_cart-total-abandoned}}
 
 </container>
 
