@@ -1,0 +1,35 @@
+
+
+<row>
+
+	{{#repeat 1}}
+
+	<columns large="5">
+
+		<img class="image-border" src="http://www.begemot.ru/upload/email/Test/v_0_kapotnya/assets/img/assets__items_bottle.jpg">
+
+	</columns>
+
+	<columns large="7">
+
+		<spacer size="4"></spacer>
+
+		<!-- <row><columns><p class="small-text-center"><a href="${ DETAIL_LINK_URL }">${ ITEM_NAME }</a></p></columns></row> -->
+		<row><columns><p class="padding-add-8 small-text-center"><strong><a href="#">Бутылочка Fenber Stratobuster S-202-180, серый</a></strong></p></columns></row>
+
+		<!-- <row class="vertical-collapse"><columns><p class="item-price small-text-center">${ TOTAL_PRICE } руб.</p></columns></row> -->
+		<row class="vertical-collapse"><columns><p class="padding-add-8 item-price small-text-center">415 руб.</p></columns></row>
+
+		<spacer size="4"></spacer>
+
+		{{>_item-small-price}}
+
+		<!-- <row><columns><button class="radius alert expanded" href="${ DETAIL_LINK_URL }">купить</button></columns></row> -->
+		<row><columns><button class="radius alert expanded" href="#">купить</button></columns></row>
+
+
+	</columns>
+
+	{{/repeat}}
+	
+</row>

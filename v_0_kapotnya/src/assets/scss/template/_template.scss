@@ -63,7 +63,7 @@
     background-color: $white !important;
   }
 
-  // Menu
+  // @media > Menu
 
   .triggermenu th {
     border-bottom: 1px solid $white;
@@ -126,8 +126,29 @@ table.button.secondary table a {
   color: $black;
 }
 
+p strong a {
+  font-weight: bold;
+}
+
 p.text-justify {
   text-align: justify;
+}
+
+// S & O > additional padding
+
+p.padding-add-4 {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+p.padding-add-8 {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+p.padding-add-16 {
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 // Preheader
