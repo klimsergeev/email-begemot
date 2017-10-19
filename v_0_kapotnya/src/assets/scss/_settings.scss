@@ -23,7 +23,8 @@ h4,
 h5,
 h6,
 p,
-a {
+a,
+span {
   -webkit-font-smoothing: antialiased;
 }
 
@@ -46,7 +47,7 @@ $body-background: url('http://www.begemot.ru/upload/email/Test/v_0_kapotnya/asse
 $container-background: $white;
 $global-padding: 16px;
 $global-margin: 16px;
-$global-radius: 16px;
+$global-radius: 12px;
 $global-rounded: 500px;
 $global-breakpoint: $global-width + $global-gutter;
 

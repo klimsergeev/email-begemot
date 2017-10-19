@@ -79,11 +79,11 @@
   }
 
   .triggermenu th.first th {
-    border-radius: 12px 12px 0 0;
+    border-radius: $global-radius $global-radius 0 0;
   }
 
   .triggermenu th.last th {
-    border-radius: 0 0 12px 12px;
+    border-radius: 0 0 $global-radius $global-radius;
     border-bottom: none;
   }
 
